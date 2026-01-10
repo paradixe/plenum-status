@@ -41,18 +41,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/supabase.plenum.pro.ico",
     "slug": "supabase-api",
     "status": "down",
-    "uptime": "4.55%",
-    "uptimeDay": "4.55%",
-    "uptimeWeek": "4.55%",
-    "uptimeMonth": "4.55%",
-    "uptimeYear": "4.55%",
+    "uptime": "0.52%",
+    "uptimeDay": "0.52%",
+    "uptimeWeek": "0.52%",
+    "uptimeMonth": "0.52%",
+    "uptimeYear": "0.52%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-01-10": 0
+      "2026-01-10": 2
     }
   }
 ]
