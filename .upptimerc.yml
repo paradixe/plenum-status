@@ -9,20 +9,152 @@ sites:
     url: https://plenum.pro
   - name: Plenum API
     url: https://plenum.pro/api/health
-  - name: Supabase API
-    url: https://supabase.plenum.pro
 
 status-website:
   cname: status.plenum.pro
   logoUrl: https://plenum.pro/logo.png
   name: Plenum Status
-  introTitle: "**Plenum** is the complete HVAC business operating system"
-  introMessage: This is the status page for Plenum CRM services. We monitor our services every 5 minutes.
+  introTitle: "**Plenum** — The Complete HVAC Business Operating System"
+  introMessage: Real-time status for all Plenum services. We monitor everything every 5 minutes.
   navbar:
     - title: Status
       href: /
-    - title: Plenum CRM
+    - title: Dashboard
+      href: https://plenum.pro/dashboard
+    - title: Website
       href: https://plenum.pro
+
+  # Plenum Brand Colors
+  theme: light
+  customHeadHtml: |
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+      :root {
+        /* Plenum Brand Colors */
+        --color-coriander: #C6CEB0;
+        --color-emerald: #10B981;
+        --color-blue: #3B82F6;
+        --color-gray-50: #F9FAFB;
+        --color-gray-800: #1F2937;
+        --color-gray-900: #111827;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+        background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+      }
+
+      /* Header styling */
+      nav {
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(198, 206, 176, 0.2);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+
+      nav .logo {
+        font-weight: 600;
+        color: var(--color-gray-900) !important;
+      }
+
+      /* Cards and status indicators */
+      .status {
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(198, 206, 176, 0.2);
+        background: white;
+      }
+
+      /* Success/Up status - Emerald */
+      .status.up,
+      .badge.up {
+        background: linear-gradient(135deg, #34D399 0%, #10B981 100%) !important;
+        color: white !important;
+      }
+
+      /* Down status */
+      .status.down,
+      .badge.down {
+        background: linear-gradient(135deg, #F87171 0%, #EF4444 100%) !important;
+      }
+
+      /* Degraded status */
+      .status.degraded,
+      .badge.degraded {
+        background: linear-gradient(135deg, #FCD34D 0%, #F59E0B 100%) !important;
+      }
+
+      /* Links */
+      a {
+        color: var(--color-blue);
+        transition: all 0.2s;
+      }
+
+      a:hover {
+        color: var(--color-emerald);
+      }
+
+      /* Buttons */
+      button, .button {
+        background: linear-gradient(135deg, var(--color-coriander) 0%, #34D399 100%);
+        border: none;
+        border-radius: 6px;
+        padding: 8px 16px;
+        font-weight: 500;
+        transition: all 0.2s;
+      }
+
+      button:hover, .button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(198, 206, 176, 0.3);
+      }
+
+      /* Intro section */
+      header h1 {
+        background: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+      }
+
+      /* Status bars */
+      .bar {
+        border-radius: 4px;
+      }
+
+      .bar.up {
+        background: var(--color-emerald) !important;
+      }
+
+      .bar.down {
+        background: #EF4444 !important;
+      }
+
+      .bar.degraded {
+        background: #F59E0B !important;
+      }
+
+      /* Footer */
+      footer {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+        border-top: 1px solid rgba(198, 206, 176, 0.2);
+        margin-top: 64px;
+        padding: 32px 0;
+      }
+
+      /* Glassmorphism cards */
+      section {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(198, 206, 176, 0.2);
+        border-radius: 12px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+    </style>
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
